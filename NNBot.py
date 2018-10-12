@@ -5,7 +5,7 @@ import random
 import os
 
 bot = discord.Client()
-bot_prefix="!"
+bot_prefix="nn@"
 bot = commands.Bot(command_prefix=bot_prefix)
 
 @bot.event
@@ -18,9 +18,13 @@ async def on_ready() :
     await bot.change_presence(game=discord.Game(name='OnrcNN'ın Haşmetlisi ile!'))
 
 @bot.command(pass_context=True)
-async def yirmi15(ctx) :
-    await bot.say("Ben bot 2318'im!")
+async def onurcan(ctx) :
+    await bot.say("Allah")
 
+@bot.command(pass_context=True)
+async def berkay(ctx) : 
+    await bot.say("Yıkık bir orospu çoçu")
+                                                
 @bot.command(pass_context=True)
 async def a(ctx, member:discord.Member):
     urll = ["https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif" , 
