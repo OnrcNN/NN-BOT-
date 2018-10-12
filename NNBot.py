@@ -26,7 +26,7 @@ async def berkay(ctx) :
     await bot.say("Yıkık bir orospu çoçu")
                                                 
 @bot.command(pass_context=True)
-async def a(ctx, member:discord.Member):
+async def sarıl(ctx, member:discord.Member):
     urll = ["https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif" , 
             "https://media1.tenor.com/images/b0de026a12e20137a654b5e2e65e2aed/tenor.gif" ,
            "https://78.media.tumblr.com/680b69563aceba3df48b4483d007bce3/tumblr_mxre7hEX4h1sc1kfto1_500.gif"]
@@ -41,12 +41,5 @@ async def sil (ctx, number):
     async for x in bot.logs_from(ctx.message.channel, limit=number):
         mgs.append(x)
     await bot.delete_messages(mgs)
-
-@bot.command(pass_context=True)
-async def s (ctx):
-    mgs = ctx.message.content.split("1")
-    await bot.delete_message(ctx.message)
-    await bot.send_message(ctx.message.channel , mgs)
-
 
 bot.run(os.environ.get('token'))
