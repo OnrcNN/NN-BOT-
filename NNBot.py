@@ -15,7 +15,7 @@ async def on_ready() :
     print("ID : {}".format(bot.user.id))
     print(str(len(bot.servers)) + " tane serverda çalışıyor!")
     print(str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!")
-    await bot.change_presence(game=discord.Game(name='2318 botu çalışır durumda!'))
+    await bot.change_presence(game=discord.Game(name='OnrcNN'ın Haşmetlisi ile!'))
 
 @bot.command(pass_context=True)
 async def yirmi15(ctx) :
