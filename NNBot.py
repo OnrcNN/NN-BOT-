@@ -35,6 +35,16 @@ async def sarıl(ctx, member:discord.Member):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
+async def sik(ctx, member:discord.Member):
+    url2 = ["http://www.dna2008.com/wp-content/uploads/cache-17904550a8d0bf1e019a5df2d3979fdf/2016/01/nt9byhyX5s1ue0mfso8_500.gif" , 
+            "http://33.media.tumblr.com/dd7e4f6b177474afebe5392ae14fdd4c/tumblr_nfm5svfj8c1sjyos5o1_500.gif" ,
+           "https://78.media.tumblr.com/tumblr_lhtimuSrzj1qgmrilo1_500.gif"]
+    embed = discord.Embed(title=ctx.message.author.name + " seni çatur çutur sikiyor " + member.name )
+    embed.set_image(url=random.choice(url2))
+    await bot.say(embed=embed)    
+    
+
+@bot.command(pass_context=True)
 async def sil (ctx, number):
     mgs = []
     number = int(number)
