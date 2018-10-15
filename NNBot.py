@@ -57,7 +57,7 @@ async def atam(ctx):
     url4 = ["https://img-s2.onedio.com/id-581d72669489d62f2420acbb/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-73c0f39431fd28c2b44c7d5b30b86b57eacd40c8.gif" , 
             "https://i.pinimg.com/originals/df/44/73/df4473e848fb97ba2a38e82b26ed4871.gif" ,
            "https://2.bp.blogspot.com/-4e7Vbu42i0w/WHHaQmlYQAI/AAAAAAAAB0U/xQPcRLzjNcQUdBnX4XbgX0EC25dNeJDVACLcB/s1600/atagif1.gif"]
-    embed = discord.Embed(title=)
+    embed = discord.Embed(title=ctx.message.author.name)
     embed.set_image(url=random.choice(url4))
     await bot.say(embed=embed)    
     
