@@ -44,12 +44,21 @@ async def sakso(ctx, member:discord.Member):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def sik(ctx, member:discord.Member):
-    url2 = ["http://www.dna2008.com/wp-content/uploads/cache-17904550a8d0bf1e019a5df2d3979fdf/2016/01/nt9byhyX5s1ue0mfso8_500.gif" , 
-            "http://33.media.tumblr.com/dd7e4f6b177474afebe5392ae14fdd4c/tumblr_nfm5svfj8c1sjyos5o1_500.gif" ,
-           "https://78.media.tumblr.com/tumblr_lhtimuSrzj1qgmrilo1_500.gif"]
-    embed = discord.Embed(title=ctx.message.author.name + " seni çatur çutur sikiyor " + member.name )
-    embed.set_image(url=random.choice(url2))
+async def sakso(ctx, member:discord.Member):
+    url3 = ["http://3.bp.blogspot.com/-sogECXRDIQY/VthJpSqm43I/AAAAAAAAACM/7xzi5vgJH7Q/s1600/01.gif" , 
+            "http://www.fairytailhentaidb.com/upload/2016/08/08/20160808103633-4c3e44bd.gif" ,
+           "https://i.pinimg.com/originals/b9/bf/7b/b9bf7b4e38e86fdaaccb54c6e60c51e6.gif"]
+    embed = discord.Embed(title=ctx.message.author.name + " gloglolgogloglo " + member.name )
+    embed.set_image(url=random.choice(url3))
+    await bot.say(embed=embed)    
+
+@bot.command(pass_context=True)
+async def atam(ctx):
+    url4 = ["https://img-s2.onedio.com/id-581d72669489d62f2420acbb/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-73c0f39431fd28c2b44c7d5b30b86b57eacd40c8.gif" , 
+            "https://i.pinimg.com/originals/df/44/73/df4473e848fb97ba2a38e82b26ed4871.gif" ,
+           "https://2.bp.blogspot.com/-4e7Vbu42i0w/WHHaQmlYQAI/AAAAAAAAB0U/xQPcRLzjNcQUdBnX4XbgX0EC25dNeJDVACLcB/s1600/atagif1.gif"]
+    embed = discord.Embed(title=)
+    embed.set_image(url=random.choice(url4))
     await bot.say(embed=embed)    
     
 
