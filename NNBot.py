@@ -33,6 +33,15 @@ async def sarıl(ctx, member:discord.Member):
     embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name )
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
+  
+@bot.command(pass_context=True)
+async def sakso(ctx, member:discord.Member):
+    url3 = ["http://3.bp.blogspot.com/-sogECXRDIQY/VthJpSqm43I/AAAAAAAAACM/7xzi5vgJH7Q/s1600/01.gif" , 
+            "http://www.fairytailhentaidb.com/upload/2016/08/08/20160808103633-4c3e44bd.gif" ,
+           "https://i.pinimg.com/originals/b9/bf/7b/b9bf7b4e38e86fdaaccb54c6e60c51e6.gif"]
+    embed = discord.Embed(title=ctx.message.author.name + " gloglolgogloglo " + member.name )
+    embed.set_image(url=random.choice(url3))
+    await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
 async def sik(ctx, member:discord.Member):
