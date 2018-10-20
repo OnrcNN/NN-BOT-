@@ -33,6 +33,16 @@ async def sarıl(ctx, member:discord.Member):
     embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name )
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def öp(ctx, member:discord.Member):
+    urll = ["https://thumbs.gfycat.com/FondEvergreenIcterinewarbler-max-1mb.gif" , 
+            "https://i.gifer.com/B82h.gif" ,
+           "https://media1.tenor.com/images/f5167c56b1cca2814f9eca99c4f4fab8/tenor.gif?itemid=6155657"]
+    embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor " + member.name )
+    embed.set_image(url=random.choice(urll))
+    await bot.say(embed=embed)
+      
   
 @bot.command(pass_context=True)
 async def sakso(ctx, member:discord.Member):
