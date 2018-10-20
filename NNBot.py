@@ -43,16 +43,6 @@ async def öp(ctx, member:discord.Member):
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
       
-  
-@bot.command(pass_context=True)
-async def sakso(ctx, member:discord.Member):
-    url3 = ["http://3.bp.blogspot.com/-sogECXRDIQY/VthJpSqm43I/AAAAAAAAACM/7xzi5vgJH7Q/s1600/01.gif" , 
-            "http://www.fairytailhentaidb.com/upload/2016/08/08/20160808103633-4c3e44bd.gif" ,
-           "https://i.pinimg.com/originals/b9/bf/7b/b9bf7b4e38e86fdaaccb54c6e60c51e6.gif"]
-    embed = discord.Embed(title=ctx.message.author.name + " gloglolgogloglo " + member.name )
-    embed.set_image(url=random.choice(url3))
-    await bot.say(embed=embed) 
-
 @bot.command(pass_context=True)
 async def atam(ctx):
     url4 = ["https://img-s2.onedio.com/id-581d72669489d62f2420acbb/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-73c0f39431fd28c2b44c7d5b30b86b57eacd40c8.gif" , 
