@@ -39,8 +39,6 @@ async def sarıl(ctx, member:discord.Member):
 async def öp(ctx, member:discord.Member):
     url9 = ["https://thumbs.gfycat.com/FondEvergreenIcterinewarbler-max-1mb.gif" , 
             "https://i.gifer.com/B82h.gif" ,
-           "http://images5.fanpop.com/image/photos/29000000/Itazura-na-Kiss-itazura-na-kiss-29059617-450-253.gif" ,
-           "https://perspectivaypercepcion.files.wordpress.com/2016/04/tumblr_o4u84jvodk1s5wiico1_500.gif" ,
            "http://31.media.tumblr.com/fa20ef0dc64981e7d5df01e657fe82ad/tumblr_mofnbpnM291rgn0hpo1_500.gif"]
     embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor " + member.name )
     embed.set_image(url=random.choice(urll))
