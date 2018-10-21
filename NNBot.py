@@ -60,7 +60,7 @@ async def vur(ctx):
             "https://media1.tenor.com/images/b6d8a83eb652a30b95e87cf96a21e007/tenor.gif" ,
            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJXAvVd7xgvUVyruIlwWvT1Y9a2xvJADKnB01VqjHKVlyh1WB_" ,
            "https://media1.tenor.com/images/1cf84bf514d2abd2810588caf7d9fd08/tenor.gif?itemid=7679403"]
-    embed = discord.Embed(title=ctx.message.author.name)
+    embed = discord.Embed(title=ctx.message.author.name + " sana vuruyor " + member.name )
     embed.set_image(url=random.choice(url4))
     await bot.say(embed=embed)      
     
