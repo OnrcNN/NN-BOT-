@@ -23,11 +23,11 @@ async def onurcan(ctx) :
 
 @bot.command(pass_context=True)
 async def yamur(ctx) :
-    await bot.say("Best kankam"
+    await bot.say("Best kankam")
                   
 @bot.command(pass_context=True)
 async def yağmur(ctx) :
-    await bot.say("Best kankam"
+    await bot.say("Best kankam")
                   
 @bot.command(pass_context=True)
 async def berkay(ctx) : 
