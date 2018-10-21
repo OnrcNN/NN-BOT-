@@ -15,7 +15,7 @@ async def on_ready() :
     print("ID : {}".format(bot.user.id))
     print(str(len(bot.servers)) + " tane serverda çalışıyor!")
     print(str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!")
-    await bot.change_presence(game=discord.Game(name='OnrcNN''ın Haşmetlisi ile!'))
+    await bot.change_presence(game=discord.Game(name='OnrcNN ile '))
 
 @bot.command(pass_context=True)
 async def onurcan(ctx) :
@@ -37,10 +37,11 @@ async def sarıl(ctx, member:discord.Member):
 
 @bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member):
-    url9 = ["https://thumbs.gfycat.com/FondEvergreenIcterinewarbler-max-1mb.gif" , 
+    url7 = ["https://acegif.com/wp-content/uploads/anime-kiss-m.gif" , 
             "https://i.gifer.com/B82h.gif" ,
-           "http://31.media.tumblr.com/fa20ef0dc64981e7d5df01e657fe82ad/tumblr_mofnbpnM291rgn0hpo1_500.gif"]
-    embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor " + member.name )
+           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QSSLGa6XIY2Jplh8T7iGoq6vtBaf_-WcCPxisKSBuWyRGcHU" ,
+           "https://media.tenor.com/images/197df534507bd229ba790e8e1b5f63dc/tenor.gif"]
+    embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor muck " + member.name )
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
       
