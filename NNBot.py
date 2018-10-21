@@ -42,7 +42,7 @@ async def öp(ctx, member:discord.Member):
            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QSSLGa6XIY2Jplh8T7iGoq6vtBaf_-WcCPxisKSBuWyRGcHU" ,
            "https://media.tenor.com/images/197df534507bd229ba790e8e1b5f63dc/tenor.gif"]
     embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor muck " + member.name )
-    embed.set_image(url=random.choice(urll))
+    embed.set_image(url=random.choice(url7))
     await bot.say(embed=embed)
       
 @bot.command(pass_context=True)
