@@ -22,6 +22,14 @@ async def onurcan(ctx) :
     await bot.say("Buranın tanrısı")
 
 @bot.command(pass_context=True)
+async def yamur(ctx) :
+    await bot.say("Best kankam"
+                  
+@bot.command(pass_context=True)
+async def yağmur(ctx) :
+    await bot.say("Best kankam"
+                  
+@bot.command(pass_context=True)
 async def berkay(ctx) : 
     await bot.say("Yıkık biri")
                                                 
