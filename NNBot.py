@@ -55,7 +55,7 @@ async def atam(ctx):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def vur(ctx):
+async def vur(ctx, member:discord.Member):
     url4 = ["https://media1.tenor.com/images/85722c3e51d390e11a0493696f32fb69/tenor.gif" , 
             "https://media1.tenor.com/images/b6d8a83eb652a30b95e87cf96a21e007/tenor.gif" ,
            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJXAvVd7xgvUVyruIlwWvT1Y9a2xvJADKnB01VqjHKVlyh1WB_" ,
