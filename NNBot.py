@@ -37,22 +37,32 @@ async def sarıl(ctx, member:discord.Member):
 
 @bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member):
-    url7 = ["https://acegif.com/wp-content/uploads/anime-kiss-m.gif" , 
+    url2 = ["https://acegif.com/wp-content/uploads/anime-kiss-m.gif" , 
             "https://i.gifer.com/B82h.gif" ,
            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QSSLGa6XIY2Jplh8T7iGoq6vtBaf_-WcCPxisKSBuWyRGcHU" ,
            "https://media.tenor.com/images/197df534507bd229ba790e8e1b5f63dc/tenor.gif"]
     embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor muck " + member.name )
-    embed.set_image(url=random.choice(url7))
+    embed.set_image(url=random.choice(url2))
     await bot.say(embed=embed)
       
 @bot.command(pass_context=True)
 async def atam(ctx):
-    url4 = ["https://img-s2.onedio.com/id-581d72669489d62f2420acbb/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-73c0f39431fd28c2b44c7d5b30b86b57eacd40c8.gif" , 
+    url3 = ["https://img-s2.onedio.com/id-581d72669489d62f2420acbb/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-73c0f39431fd28c2b44c7d5b30b86b57eacd40c8.gif" , 
             "https://i.pinimg.com/originals/df/44/73/df4473e848fb97ba2a38e82b26ed4871.gif" ,
            "https://2.bp.blogspot.com/-4e7Vbu42i0w/WHHaQmlYQAI/AAAAAAAAB0U/xQPcRLzjNcQUdBnX4XbgX0EC25dNeJDVACLcB/s1600/atagif1.gif"]
     embed = discord.Embed(title=ctx.message.author.name)
+    embed.set_image(url=random.choice(url3))
+    await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def vur(ctx):
+    url4 = ["https://media1.tenor.com/images/85722c3e51d390e11a0493696f32fb69/tenor.gif" , 
+            "https://media1.tenor.com/images/b6d8a83eb652a30b95e87cf96a21e007/tenor.gif" ,
+           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJXAvVd7xgvUVyruIlwWvT1Y9a2xvJADKnB01VqjHKVlyh1WB_" ,
+           "https://media1.tenor.com/images/1cf84bf514d2abd2810588caf7d9fd08/tenor.gif?itemid=7679403"]
+    embed = discord.Embed(title=ctx.message.author.name)
     embed.set_image(url=random.choice(url4))
-    await bot.say(embed=embed)    
+    await bot.say(embed=embed)      
     
 
 @bot.command(pass_context=True)
