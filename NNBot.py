@@ -19,11 +19,11 @@ async def on_ready() :
 
 @bot.command(pass_context=True)
 async def onurcan(ctx) :
-    await bot.say("Allah")
+    await bot.say("Buranın tanrısı")
 
 @bot.command(pass_context=True)
 async def berkay(ctx) : 
-    await bot.say("Yıkık bir orospu çoçu")
+    await bot.say("Yıkık biri")
                                                 
 @bot.command(pass_context=True)
 async def sarıl(ctx, member:discord.Member):
