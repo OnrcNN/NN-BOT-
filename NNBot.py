@@ -52,7 +52,12 @@ async def öp(ctx, member:discord.Member):
     embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor muck " + member.name )
     embed.set_image(url=random.choice(url2))
     await bot.say(embed=embed)
-      
+
+@bot.command(pass_context=True)
+async def yazdir(ctx, *,content) :
+    await bot.delete_message(ctx.message)
+    await bot.say(content)
+    
 @bot.command(pass_context=True)
 async def atam(ctx):
     url3 = ["https://img-s2.onedio.com/id-581d72669489d62f2420acbb/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-73c0f39431fd28c2b44c7d5b30b86b57eacd40c8.gif" , 
