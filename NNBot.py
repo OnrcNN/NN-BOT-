@@ -54,7 +54,7 @@ async def öp(ctx, member:discord.Member):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def yazdir(ctx, *,content) :
+async def yazdır(ctx, *,content) :
     await bot.delete_message(ctx.message)
     await bot.say(content)
     
