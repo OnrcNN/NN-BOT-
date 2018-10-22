@@ -54,7 +54,8 @@ async def öp(ctx, member:discord.Member):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def yazdır(ctx, *,content) :
+async def soyle(ctx, *,content) :
+    """Komuttan sonra yazdığınız şeyi bottan yazar"""
     await bot.delete_message(ctx.message)
     await bot.say(content)
     
