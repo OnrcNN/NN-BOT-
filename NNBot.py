@@ -89,7 +89,7 @@ async def sil (ctx, number):
 
 
 @bot.command(pass_context=True)
-async def inori(ctx, member:discord.Member):
+async def inori(ctx):
     url6 = ["https://66.media.tumblr.com/a0cf0a8f45a4adae1d570759d66689f5/tumblr_oo7qio51KI1tlypw3o1_500.gif" ,
             "https://media.giphy.com/media/zv9JddBUO0V9e/giphy.gif" ,
             "https://66.media.tumblr.com/3b7452c2751d04ea45aef98ca0878915/tumblr_o4gooxHNdv1sfqz8qo6_r1_500.gif" ,
