@@ -87,7 +87,6 @@ async def sil (ctx, number):
         mgs.append(x)
     await bot.delete_messages(mgs)
 
-bot.run(os.environ.get('token'))
 
 @bot.command(pass_context=True)
 async def inori(ctx, member:discord.Member):
@@ -105,3 +104,5 @@ async def inori(ctx, member:discord.Member):
     embed = discord.Embed(title=ctx.message.author.name)
     embed.set_image(url=random.choice(url6))
     await bot.say(embed=embed)
+    
+bot.run(os.environ.get('token'))    
