@@ -88,3 +88,20 @@ async def sil (ctx, number):
     await bot.delete_messages(mgs)
 
 bot.run(os.environ.get('token'))
+
+@bot.command(pass_context=True)
+async def inori(ctx, member:discord.Member):
+    url6 = ["https://66.media.tumblr.com/a0cf0a8f45a4adae1d570759d66689f5/tumblr_oo7qio51KI1tlypw3o1_500.gif" ,
+            "https://media.giphy.com/media/zv9JddBUO0V9e/giphy.gif" ,
+            "https://66.media.tumblr.com/3b7452c2751d04ea45aef98ca0878915/tumblr_o4gooxHNdv1sfqz8qo6_r1_500.gif" ,
+            "https://66.media.tumblr.com/3481d0b3f8bd4a35bb7d51b1d190c850/tumblr_oswj6gdzdr1v14hqvo1_500.gif" ,
+            "https://66.media.tumblr.com/1f8c15ffb636d73530541d4356ce9aa3/tumblr_os3q8iWAO51wn2b96o1_500.gif " ,
+            "https://data.whicdn.com/images/26749996/original.gif" ,
+            "https://pa1.narvii.com/6439/5066d7796e9e894c0201d020cf645d201ff183e3_hq.gif" ,
+            "https://media.giphy.com/media/MYIYxlikuTAUU/giphy.gif" ,
+            "https://thumbs.gfycat.com/SorrowfulLittleChicken-size_restricted.gif" ,
+            "https://thumbs.gfycat.com/LeftCoordinatedCrossbill-size_restricted.gif" ,
+            "http://24.media.tumblr.com/be5f000b7e167c9f1bd43277c0f8da00/tumblr_mz0ba9SjN01qitjclo1_500.gif"]
+            embed = discord.Embed(title=ctx.message.author.name)
+            embed.set_image(url=random.choice(url6))
+            await bot.say (embed=embed)
