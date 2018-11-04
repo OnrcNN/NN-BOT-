@@ -102,6 +102,6 @@ async def inori(ctx, member:discord.Member):
             "https://thumbs.gfycat.com/SorrowfulLittleChicken-size_restricted.gif" ,
             "https://thumbs.gfycat.com/LeftCoordinatedCrossbill-size_restricted.gif" ,
             "http://24.media.tumblr.com/be5f000b7e167c9f1bd43277c0f8da00/tumblr_mz0ba9SjN01qitjclo1_500.gif"]
-            embed = discord.Embed(title=ctx.message.author.name)
-            embed.set_image(url=random.choice(url6))
-            await bot.say (embed=embed)
+    embed = discord.Embed(title=ctx.message.author.name)
+    embed.set_image(url=random.choice(url6))
+    await bot.say(embed=embed)
