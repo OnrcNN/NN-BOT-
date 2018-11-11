@@ -104,5 +104,26 @@ async def inori(ctx):
     embed = discord.Embed(title="Yuzuriha Inori :heart:")
     embed.set_image(url=random.choice(url6))
     await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def neko(ctx):
+    url7 = ["https://media1.tenor.com/images/21515181b13a4dd39202662ebd50e558/tenor.gif?itemid=9780123" ,
+            "https://data.whicdn.com/images/216019175/original.gif" ,
+            "https://media1.tenor.com/images/6908f3de8ce18b0e368251a6392adc87/tenor.gif?itemid=5036492" ,
+            "https://pa1.narvii.com/5922/d781e657a65e3f88c1cb3e4a4a721db64b026ece_hq.gif" ,
+            "https://media.giphy.com/media/J7dZvJh4gOMve/giphy.gif" ,
+            "https://data.whicdn.com/images/138118590/original.gif" ,
+            "https://media.giphy.com/media/nHOxOhjR837fW/giphy.gif" ,
+            "https://media1.tenor.com/images/3fab0026a18a647c790890fdd6badde2/tenor.gif?itemid=5615368" ,
+            "https://vignette.wikia.nocookie.net/slaveleiafanfiction/images/6/6b/Cute_Mew.gif/revision/latest?cb=20180314185712" ,
+            "https://data.whicdn.com/images/176566371/original.gif" ,
+            "https://media1.tenor.com/images/f93e8ad496feac35d48a0d01f94dc871/tenor.gif?itemid=7861837" ,
+            "https://data.whicdn.com/images/302452164/original.gif" ,
+            "https://thumbs.gfycat.com/BlandFairInchworm-max-1mb.gif" ,
+            "https://media3.giphy.com/media/jCaU8WfesJfH2/giphy.gif?cid=3640f6095be813e5476c6c446728ee46" ,
+            "https://media1.giphy.com/media/eenSsRGbw8C4g/giphy.gif?cid=3640f6095be813e5476c6c446728ee46"]
+    embed = discord.Embed(title="Neko")
+            embed.set_image(url=random.choice(url7))
+            await bot.say(embed=embed)
     
 bot.run(os.environ.get('token'))    
