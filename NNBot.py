@@ -123,7 +123,7 @@ async def neko(ctx):
             "https://media3.giphy.com/media/jCaU8WfesJfH2/giphy.gif?cid=3640f6095be813e5476c6c446728ee46" ,
             "https://media1.giphy.com/media/eenSsRGbw8C4g/giphy.gif?cid=3640f6095be813e5476c6c446728ee46"]
     embed = discord.Embed(title="Neko")
-            embed.set_image(url=random.choice(url7))
-            await bot.say(embed=embed)
+    embed.set_image(url=random.choice(url7))
+    await bot.say(embed=embed)
     
 bot.run(os.environ.get('token'))    
