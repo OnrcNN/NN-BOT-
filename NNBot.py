@@ -125,5 +125,12 @@ async def neko(ctx):
     embed = discord.Embed(title="Neko")
     embed.set_image(url=random.choice(url7))
     await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def taşla(ctx, member:discord.member):
+    url8 = ["https://thumbs.gfycat.com/GiganticBiodegradableGalapagossealion-size_restricted.gif"]
+    embed = discord.Embed(title= ctx.message.author.name + " seni taşlıyor " + member.name)
+    embed.set_image(url=random.choice(url8))
+    await bot.say(embed=embed)
     
 bot.run(os.environ.get('token'))    
