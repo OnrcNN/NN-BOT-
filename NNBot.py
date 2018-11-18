@@ -19,15 +19,15 @@ async def on_ready() :
 
 @bot.command(pass_context=True)
 async def onurcan(ctx) :
-    await bot.say("Buranın tanrısı")
+    await bot.say("Kodlayan")
 
 @bot.command(pass_context=True)
 async def yamur(ctx) :
-    await bot.say("Best kankam")
+    await bot.say(":heart:")
                   
 @bot.command(pass_context=True)
 async def yağmur(ctx) :
-    await bot.say("Best kankam")
+    await bot.say(":heart:")
                   
 @bot.command(pass_context=True)
 async def berkay(ctx) : 
