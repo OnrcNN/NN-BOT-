@@ -31,7 +31,7 @@ async def yağmur(ctx) :
                   
 @bot.command(pass_context=True)
 async def berkay(ctx) : 
-    await bot.say("Yıkık biri")
+    await bot.say(":middle_finger:")
                                                 
 @bot.command(pass_context=True)
 async def sarıl(ctx, member:discord.Member):
