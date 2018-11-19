@@ -132,5 +132,11 @@ async def taşla(ctx, member:discord.Member):
     embed = discord.Embed(title= ctx.message.author.name + " seni taşlıyor " + member.name)
     embed.set_image(url=random.choice(url8))
     await bot.say(embed=embed)
-    
+
+@bot.command(pass_context=True)
+async def katıl(ctx):
+   author = ctx.message.author
+   voice_channel = author.voice_channel
+   vc = await client.join_voice_channel(voice_channel)  
+
 bot.run(os.environ.get('token'))    
