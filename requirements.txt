@@ -3,3 +3,5 @@ pip
 aiohttp ~= 2.3.10
 websockets
 youtube-dl
+PyNaCl
+asyncio
