@@ -134,9 +134,9 @@ async def taşla(ctx, member:discord.Member):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def katıl(ctx):
-   author = ctx.message.author
-   voice_channel = author.voice_channel
-   vc = await client.join_voice_channel(voice_channel)  
+async def gel(ctx):
+    author = ctx.message.author
+    channel = author.voice_channel
+    await bot.join_voice_channel(channel) 
 
 bot.run(os.environ.get('token'))    
