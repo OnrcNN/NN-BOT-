@@ -217,13 +217,5 @@ async def resume(con):
                 servers_songs[con.message.server.id].resume()
                 paused[con.message.server.id]=False
 
-@bot.event
-async def on_ready() :
-    print("Bot çevrimiçi!")
-    print("İsim : {}".format(bot.user.name))
-    print("ID : {}".format(bot.user.id))
-    print(str(len(bot.servers)) + " tane serverda çalışıyor!")
-    print(str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!")
-    await bot.change_presence(game=discord.Game(name='OnrcNN ile '))
 
 bot.run(os.environ.get('token'))   
