@@ -59,7 +59,7 @@ async def bg():
 async def on_ready():
     bot.loop.create_task(bg())
     print(bot.user.name)
-
+    await bot.change_presence(game=discord.Game(name='OnrcNN ile '))
 
 
 @bot.event
