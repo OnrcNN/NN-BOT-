@@ -1,1 +1,1 @@
-worker: python3 NNBot.py
+worker: python NNBot.py
