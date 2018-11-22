@@ -105,7 +105,7 @@ async def after_song(con,clear):
 
 
 @bot.command(pass_context=True)
-async def play(con,*,url):
+async def oynat(con,*,url):
     """PLAY THE GIVEN SONG AND QUEUE IT IF THERE IS CURRENTLY SOGN PLAYING"""
     check = str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):
@@ -118,7 +118,7 @@ async def play(con,*,url):
         if bot.is_voice_connected(con.message.server) == True:
             if player_status[con.message.server.id]==True:
                 song_names[con.message.server.id].append(url)
-                await bot.send_message(con.message.channel, "**Song  Queued**")
+                await bot.send_message(con.message.channel, "**Şarkı sıraya alındı :white_check_mark:**")
 
 
                 
@@ -128,7 +128,7 @@ async def play(con,*,url):
                 song=await bot.voice_client_in(con.message.server).create_ytdl_player(song_names[con.message.server.id][0], ytdl_options=opts, after=lambda: bot.loop.create_task(after_song(con,False)))
                 servers_songs[con.message.server.id]=song
                 servers_songs[con.message.server.id].start()
-                msg = await bot.send_message(con.message.channel, "Now playing {}".format(servers_songs[con.message.server.id].title))
+                msg = await bot.send_message(con.message.channel, "Şuanda oynatılan > {}".format(servers_songs[con.message.server.id].title))
                 now_playing[con.message.server.id]=msg
                 song_names[con.message.server.id].pop(0)
 
@@ -136,14 +136,14 @@ async def play(con,*,url):
 
 
 @bot.command(pass_context=True)
-async def skip(con):
+async def atla(con):
     check = str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):#COMMAND IS IN DM
         await bot.send_message(con.message.channel, "**You must be in a `server voice channel` to use this command**")
 
     if check != 'Direct Message with {}'.format(con.message.author.name):#COMMAND NOT IN DM
         if servers_songs[con.message.server.id]== None or len(song_names[con.message.server.id])==0 or player_status[con.message.server.id]==False:
-            await bot.send_message(con.message.channel,"**No songs in queue to skip**")
+            await bot.send_message(con.message.channel,"**Atlanılacak şarkı yok !**")
         if servers_songs[con.message.server.id] !=None:
             servers_songs[con.message.server.id].pause()
             bot.loop.create_task(queue_songs(con,False))
@@ -165,12 +165,12 @@ async def join(con,channel=None):
             await bot.join_voice_channel(con.message.author.voice.voice_channel)
 
         if voice_status == True:#VOICE ALREADY CONNECTED
-            await bot.send_message(con.message.channel, "**Bot is already connected to a voice channel**")
+            await bot.send_message(con.message.channel, "**Bot zaten bir kanala bağlı !**")
 
 
 
 @bot.command(pass_context=True)
-async def leave(con):
+async def cikis(con):
     """LEAVE THE VOICE CHANNEL AND STOP ALL SONGS AND CLEAR QUEUE"""
     check=str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):#COMMAND USED IN DM
@@ -180,14 +180,14 @@ async def leave(con):
         
         # IF VOICE IS NOT CONNECTED
         if bot.is_voice_connected(con.message.server) == False:
-            await bot.send_message(con.message.channel,"**Bot is not connected to a voice channel**")
+            await bot.send_message(con.message.channel,"**Bot kanala bağlanmamış !**")
 
         # VOICE ALREADY CONNECTED
         if bot.is_voice_connected(con.message.server) == True:
             bot.loop.create_task(queue_songs(con,True))
 
 @bot.command(pass_context=True)
-async def pause(con):
+async def durdur(con):
     check = str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):# COMMAND IS IN DM
         await bot.send_message(con.message.channel, "**You must be in a `server voice channel` to use this command**")
@@ -196,23 +196,23 @@ async def pause(con):
     if check != 'Direct Message with {}'.format(con.message.author.name):
         if servers_songs[con.message.server.id]!=None:
             if paused[con.message.server.id] == True:
-                await bot.send_message(con.message.channel,"**Audio already paused**")
+                await bot.send_message(con.message.channel,"**Şarkı zaten durdurulmuş !**")
             if paused[con.message.server.id]==False:
                 servers_songs[con.message.server.id].pause()
                 paused[con.message.server.id]=True
 
 @bot.command(pass_context=True)
-async def resume(con):
+async def devam(con):
     check = str(con.message.channel)
     # COMMAND IS IN DM
     if check == 'Direct Message with {}'.format(con.message.author.name):
-        await bot.send_message(con.message.channel, "**You must be in a `server voice channel` to use this command**")
+        await bot.send_message(con.message.channel, "**You must be in a  `server voice channel` to use this command**")
 
     # COMMAND NOT IN DM
     if check != 'Direct Message with {}'.format(con.message.author.name):
         if servers_songs[con.message.server.id] != None:
             if paused[con.message.server.id] == False:
-                await bot.send_message(con.message.channel,"**Audio already playing**")
+                await bot.send_message(con.message.channel,"**Zaten oynatılıyor !**")
             if paused[con.message.server.id] ==True:
                 servers_songs[con.message.server.id].resume()
                 paused[con.message.server.id]=False
