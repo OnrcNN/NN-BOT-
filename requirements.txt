@@ -1,7 +1,5 @@
-discord.py[voice] ~= 0.16.0
+discord
 pip
-aiohttp ~= 2.3.10
-websockets
 youtube-dl
 PyNaCl
 asyncio
