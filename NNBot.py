@@ -220,7 +220,8 @@ async def devam(con):
 @bot.command(pass_context=True)
 async def onurcan(ctx) :
     await bot.say("Kodlayan")
- @bot.command(pass_context=True)
+ 
+@bot.command(pass_context=True)
 async def yamur(ctx) :
     await bot.say(":heart:")
                   
@@ -241,7 +242,8 @@ async def sarıl(ctx, member:discord.Member):
     embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name )
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
- @bot.command(pass_context=True)
+
+@bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member):
     url2 = ["https://acegif.com/wp-content/uploads/anime-kiss-m.gif" , 
             "https://i.gifer.com/B82h.gif" ,
@@ -250,7 +252,8 @@ async def öp(ctx, member:discord.Member):
     embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor muck " + member.name )
     embed.set_image(url=random.choice(url2))
     await bot.say(embed=embed)
- @bot.command(pass_context=True)
+
+@bot.command(pass_context=True)
 async def soyle(ctx, *,content) :
     """Komuttan sonra yazdığınız şeyi bottan yazar"""
     await bot.delete_message(ctx.message)
@@ -264,7 +267,8 @@ async def atam(ctx):
     embed = discord.Embed(title=ctx.message.author.name)
     embed.set_image(url=random.choice(url3))
     await bot.say(embed=embed)
- @bot.command(pass_context=True)
+
+@bot.command(pass_context=True)
 async def vur(ctx, member:discord.Member):
     url4 = ["https://media1.tenor.com/images/85722c3e51d390e11a0493696f32fb69/tenor.gif" , 
             "https://media1.tenor.com/images/b6d8a83eb652a30b95e87cf96a21e007/tenor.gif" ,
@@ -274,14 +278,15 @@ async def vur(ctx, member:discord.Member):
     embed.set_image(url=random.choice(url4))
     await bot.say(embed=embed)      
     
- @bot.command(pass_context=True)
+@bot.command(pass_context=True)
 async def sil (ctx, number):
     mgs = []
     number = int(number)
     async for x in bot.logs_from(ctx.message.channel, limit=number):
         mgs.append(x)
     await bot.delete_messages(mgs)
- @bot.command(pass_context=True)
+
+@bot.command(pass_context=True)
 async def inori(ctx):
     url6 = ["https://66.media.tumblr.com/a0cf0a8f45a4adae1d570759d66689f5/tumblr_oo7qio51KI1tlypw3o1_500.gif" ,
             "https://media.giphy.com/media/zv9JddBUO0V9e/giphy.gif" ,
@@ -297,7 +302,8 @@ async def inori(ctx):
     embed = discord.Embed(title="Yuzuriha Inori :heart:")
     embed.set_image(url=random.choice(url6))
     await bot.say(embed=embed)
- @bot.command(pass_context=True)
+
+@bot.command(pass_context=True)
 async def neko(ctx):
     url7 = ["https://media1.tenor.com/images/21515181b13a4dd39202662ebd50e558/tenor.gif?itemid=9780123" ,
             "https://data.whicdn.com/images/216019175/original.gif" ,
@@ -317,7 +323,8 @@ async def neko(ctx):
     embed = discord.Embed(title="Neko")
     embed.set_image(url=random.choice(url7))
     await bot.say(embed=embed)
- @bot.command(pass_context=True)
+
+@bot.command(pass_context=True)
 async def taşla(ctx, member:discord.Member):
     url8 = ["https://thumbs.gfycat.com/GiganticBiodegradableGalapagossealion-size_restricted.gif"]
     embed = discord.Embed(title= ctx.message.author.name + " seni taşlıyor " + member.name)
