@@ -111,7 +111,7 @@ async def oynat(con,*,url):
     """PLAY THE GIVEN SONG AND QUEUE IT IF THERE IS CURRENTLY SOGN PLAYING"""
     check = str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):
-        await bot.send_message(con.message.channel, "**You must be in a `server voice channel` to use this command**")
+        await bot.send_message(con.message.channel, "**You must be in a `server voice channel ` to use this command**")
 
     if check != 'Direct Message with {}'.format(con.message.author.name):
         if bot.is_voice_connected(con.message.server) == False:
@@ -153,7 +153,7 @@ async def atla(con):
 
 
 @bot.command(pass_context=True)
-async def join(con,channel=None):
+async def katıl(con,channel=None):
     """JOIN A VOICE CHANNEL THAT THE USR IS IN OR MOVE TO A VOICE CHANNEL IF THE BOT IS ALREADY IN A VOICE CHANNEL"""
     check = str(con.message.channel)
 
@@ -172,7 +172,7 @@ async def join(con,channel=None):
 
 
 @bot.command(pass_context=True)
-async def cikis(con):
+async def çıkış(con):
     """LEAVE THE VOICE CHANNEL AND STOP ALL SONGS AND CLEAR QUEUE"""
     check=str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):#COMMAND USED IN DM
