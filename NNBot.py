@@ -1,17 +1,15 @@
 import discord
-from discord.ext.commands import Bot
-from discord.ext import commands
-import random
-import os
 import asyncio
 import youtube_dl
+from discord.ext import commands
+import os
 
-bot = discord.Client()
-bot_prefix="nn@"
+bot = commands.Bot(command_prefix='a.')
 bot.remove_command('help')
 from discord import opus
 OPUS_LIBS = ['libopus-0.x86.dll', 'libopus-0.x64.dll',
              'libopus-0.dll', 'libopus.so.0', 'libopus.0.dylib']
+
 
 def load_opus_lib(opus_libs=OPUS_LIBS):
     if opus.is_loaded():
@@ -228,4 +226,4 @@ async def on_ready() :
     print(str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!")
     await bot.change_presence(game=discord.Game(name='OnrcNN ile '))
 
-bot.run(os.environ.get('token'))    
+bot.run(os.environ.get('token'))   
