@@ -8,7 +8,6 @@ import youtube_dl
 
 bot = discord.Client()
 bot_prefix="nn@"
-bot = commands.Bot(command_prefix=bot_prefix)
 bot.remove_command('help')
 from discord import opus
 OPUS_LIBS = ['libopus-0.x86.dll', 'libopus-0.x64.dll',
