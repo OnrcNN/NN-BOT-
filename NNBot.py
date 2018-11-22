@@ -128,7 +128,7 @@ async def oynat(con,*,url):
                 song=await bot.voice_client_in(con.message.server).create_ytdl_player(song_names[con.message.server.id][0], ytdl_options=opts, after=lambda: bot.loop.create_task(after_song(con,False)))
                 servers_songs[con.message.server.id]=song
                 servers_songs[con.message.server.id].start()
-                msg = await bot.send_message(con.message.channel, "Şuanda oynatılan > {}".format(servers_songs[con.message.server.id].title))
+                msg = await bot.send_message(con.message.channel, "**Şuanda oynatılan > {}**".format(servers_songs[con.message.server.id].title))
                 now_playing[con.message.server.id]=msg
                 song_names[con.message.server.id].pop(0)
 
