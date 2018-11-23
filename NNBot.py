@@ -353,5 +353,12 @@ async def nasıya(ctx):
     embed = discord.Embed(title="**Nası ya**")
     embed.set_image(url=random.choice(nası))
     await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def komutlar(ctx):
+    komutlar = ["https://cdn.discordapp.com/attachments/508680778943561779/515609077599174660/komutlar.png"]
+    embed = discord.Embed(title="**Komutlar**")
+    embed.set_image(url=random.choice(komutlar))
+    await bot.say(embed=embed)
     
 bot.run(os.environ.get('token'))   
