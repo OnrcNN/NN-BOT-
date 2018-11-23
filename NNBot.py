@@ -347,4 +347,11 @@ async def boşyapma(ctx, member:discord.Member):
     embed.set_image(url=random.choice(bos))
     await bot.say(embed=embed)
 
+@bot.command(pass_context=True)
+async def nasıya(ctx)
+    nası = ["https://cdn.discordapp.com/attachments/508680778943561779/515603491146825748/AN66SAxojByYB350BfzjNoo83BeTmxLIg_5vWzWV3Qs900-mo-c-c0xffffffff-rj-k-no.png"]
+    embed = discord.Embed(title="**Nası ya**")
+    embed.set_image(url=random.choice(nası))
+    await bot.say(embed=embed)
+    
 bot.run(os.environ.get('token'))   
