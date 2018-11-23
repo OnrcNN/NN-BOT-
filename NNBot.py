@@ -339,5 +339,11 @@ async def nani(ctx):
     embed = discord.Embed(title="**NANI ?!?**")
     embed.set_image(url=random.choice(nani))
     await bot.say(embed=embed)       
-    
+
+@bot.command(pass_context=True(
+async def boşyapma(ctx):
+    bos = ["http://c12.incisozluk.com.tr/res/incisozluk//11509/7/2899367_o57f0.png"]
+    embed.set_image(url=random.choice(bos))
+    await bot.say(embed=embed)
+
 bot.run(os.environ.get('token'))   
