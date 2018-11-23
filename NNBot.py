@@ -333,4 +333,11 @@ async def taşla(ctx, member:discord.Member):
     embed.set_image(url=random.choice(url8))
     await bot.say(embed=embed)                
 
+@bot.command(pass_context=True)
+async def nani(ctx):
+    nani = ["https://media1.tenor.com/images/33f2e986454565b6cc91fc1548165438/tenor.gif?itemid=10203308"]
+    embed = discord.Embed(title="**NANI ?!?**")
+    embed.set_image(url=random.choice(nani))
+    await bot.say(embed=embed)       
+    
 bot.run(os.environ.get('token'))   
