@@ -343,7 +343,7 @@ async def nani(ctx):
 @bot.command(pass_context=True)
 async def boşyapma(ctx, member:discord.Member):
     bos = ["http://c12.incisozluk.com.tr/res/incisozluk//11509/7/2899367_o57f0.png"]
-    embed = discord.Embed(title= " Boş yapıyorsun " + member.name + "yapma !")
+    embed = discord.Embed(title= " Boş yapıyorsun " + member.name + " yapma !")
     embed.set_image(url=random.choice(bos))
     await bot.say(embed=embed)
 
