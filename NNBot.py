@@ -373,7 +373,7 @@ async def komutlar(ctx):
 
 @bot.command(pass_context=True)
 async def fbi(ctx, member:discord.Member):
-    fbi = ["https://www.tenor.co/Wp1T.gif"]
+    fbi = ["https://cdn.discordapp.com/attachments/517319020341362709/517326648429772820/tenor.gif"]
     embed = discord.Embed(title="FBI geldi " + member.name + "aç kapıyı aç aç aç aç !")
     embed.set_image(url=random.choice(fbi))
     await bot.say(embed=embed)
