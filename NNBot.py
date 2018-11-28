@@ -246,7 +246,9 @@ async def sarıl(ctx, member:discord.Member):
            "https://data.whicdn.com/images/86198667/original.gif" ,
            "https://myanimelist.cdn-dena.com/s/common/uploaded_files/1460993069-9ac8eaae8cd4149af4510d0fed0796bf.gif" ,
            "https://giffiles.alphacoders.com/500/5003.gif" ,
-           "https://pa1.narvii.com/6557/6db7b3283719e1999d04df43330d5e7c565ca728_hq.gif"]
+           "https://pa1.narvii.com/6557/6db7b3283719e1999d04df43330d5e7c565ca728_hq.gif"
+           "https://cdn.discordapp.com/attachments/508680778943561779/517314482859671552/1515286039_original.gif" ,
+           "https://cdn.discordapp.com/attachments/508680778943561779/517314492724674560/1489831949_large.gif" ]
     embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name )
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
