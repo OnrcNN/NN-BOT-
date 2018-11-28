@@ -240,7 +240,13 @@ async def sarıl(ctx, member:discord.Member):
     urll = ["https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif" , 
             "https://media1.tenor.com/images/b0de026a12e20137a654b5e2e65e2aed/tenor.gif" ,
            "https://78.media.tumblr.com/680b69563aceba3df48b4483d007bce3/tumblr_mxre7hEX4h1sc1kfto1_500.gif" ,
-           "https://66.media.tumblr.com/18fdf4adcb5ad89f5469a91e860f80ba/tumblr_oltayyHynP1sy5k7wo1_500.gif"]
+           "https://66.media.tumblr.com/18fdf4adcb5ad89f5469a91e860f80ba/tumblr_oltayyHynP1sy5k7wo1_500.gif" ,
+           "https://media1.tenor.com/images/654d8787063b1fcb19dd20490718e6fb/tenor.gif?itemid=3531825" ,
+           "https://66.media.tumblr.com/07ad977550e765f8ce4513fb4c8cdb31/tumblr_o4aw4tMrCb1v9a1oqo1_500.gif" ,
+           "https://data.whicdn.com/images/86198667/original.gif" ,
+           "https://myanimelist.cdn-dena.com/s/common/uploaded_files/1460993069-9ac8eaae8cd4149af4510d0fed0796bf.gif" ,
+           "https://giffiles.alphacoders.com/500/5003.gif" ,
+           "https://pa1.narvii.com/6557/6db7b3283719e1999d04df43330d5e7c565ca728_hq.gif"]
     embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name )
     embed.set_image(url=random.choice(urll))
     await bot.say(embed=embed)
@@ -250,7 +256,9 @@ async def öp(ctx, member:discord.Member):
     url2 = ["https://acegif.com/wp-content/uploads/anime-kiss-m.gif" , 
             "https://i.gifer.com/B82h.gif" ,
            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QSSLGa6XIY2Jplh8T7iGoq6vtBaf_-WcCPxisKSBuWyRGcHU" ,
-           "https://media.tenor.com/images/197df534507bd229ba790e8e1b5f63dc/tenor.gif"]
+           "https://media.tenor.com/images/197df534507bd229ba790e8e1b5f63dc/tenor.gif" ,
+           "https://cdn.discordapp.com/attachments/508680778943561779/517314482859671552/1515286039_original.gif" ,
+           "https://cdn.discordapp.com/attachments/508680778943561779/517314492724674560/1489831949_large.gif"]
     embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor muck " + member.name )
     embed.set_image(url=random.choice(url2))
     await bot.say(embed=embed)
