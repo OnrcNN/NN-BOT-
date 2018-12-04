@@ -386,7 +386,7 @@ async def alakadaretmez(ctx, member:discord.Member):
     await bot.say(embed=embed)    
 
 @bot.command(pass_context=True)
-async def agab(ctx, member:discord.Member):
+async def agab(ctx):
     agab = ["https://tenor.com/view/cigarette-smoking-smoke-stressed-nervous-gif-3581221"]
     embed = discord.Embed(title="Aga b yak yak yak")
     embed.set_image(url=random.choice(agab))
