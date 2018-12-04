@@ -377,5 +377,12 @@ async def fbi(ctx, member:discord.Member):
     embed = discord.Embed(title="FBI geldi " + member.name + "aç kapıyı aç aç aç aç !")
     embed.set_image(url=random.choice(fbi))
     await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def alakadaretmez(ctx, member:discord.Member):
+    alakadar = ["https://media.discordapp.net/attachments/500325667431514122/519576777647980581/JPEG_20181202_212021.jpg"]
+    embed = discord.Embed(title=member.name + "Bu seni hiç alakadar etmez koçm")
+    embed.set_image(url=random.choice(alakadar))
+    await bot.say(embed=embed)    
     
 bot.run(os.environ.get('token'))   
