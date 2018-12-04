@@ -381,8 +381,15 @@ async def fbi(ctx, member:discord.Member):
 @bot.command(pass_context=True)
 async def alakadaretmez(ctx, member:discord.Member):
     alakadar = ["https://media.discordapp.net/attachments/500325667431514122/519576777647980581/JPEG_20181202_212021.jpg"]
-    embed = discord.Embed(title=member.name + "Bu seni hiç alakadar etmez koçm")
+    embed = discord.Embed(title=member.name + " Bu seni hiç alakadar etmez koçm")
     embed.set_image(url=random.choice(alakadar))
     await bot.say(embed=embed)    
-    
+
+@bot.command(pass_context=True)
+async def agab(ctx, member:discord.Member):
+    agab = ["https://tenor.com/view/cigarette-smoking-smoke-stressed-nervous-gif-3581221"]
+    embed = discord.Embed(title="Aga b yak yak yak")
+    embed.set_image(url=random.choice(agab))
+    await bot.say(embed=embed)
+
 bot.run(os.environ.get('token'))   
