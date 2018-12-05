@@ -392,4 +392,8 @@ async def agab(ctx):
     embed.set_image(url=random.choice(agab))
     await bot.say(embed=embed)
 
+@bot.command(pass_context=True)
+async def test(ctx):
+    await bot.say("Yaşıom len mQ")
+    
 bot.run(os.environ.get('token'))   
