@@ -6,7 +6,7 @@ import websockets
 from discord.ext import commands
 import os
 
-bot = commands.Bot(command_prefix='nn@')
+bot = commands.Bot(command_prefix='^')
 bot.remove_command('help')
 from discord import opus
 OPUS_LIBS = ['libopus-0.x86.dll', 'libopus-0.x64.dll',
@@ -107,7 +107,7 @@ async def after_song(con,clear):
 
 
 @bot.command(pass_context=True)
-async def oynat(con,*,url):
+async def p(con,*,url):
     """PLAY THE GIVEN SONG AND QUEUE IT IF THERE IS CURRENTLY SOGN PLAYING"""
     check = str(con.message.channel)
     if check == 'Direct Message with {}'.format(con.message.author.name):
