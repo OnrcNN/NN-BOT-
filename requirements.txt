@@ -1,5 +1,4 @@
 discord
-youtube-dl
 PyNaCl
 asyncio
 aiohttp ~= 2.3.10
