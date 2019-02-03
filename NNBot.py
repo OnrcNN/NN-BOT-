@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import random
+import youtube_dl
 import websockets
 from discord.ext import commands
 import os
