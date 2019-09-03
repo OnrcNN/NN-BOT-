@@ -2,5 +2,5 @@ discord
 PyNaCl
 youtube-dl
 asyncio
-aiohttp ~= 2.3.10
+aiohttp ~= 3.5.4
 websockets
