@@ -246,5 +246,17 @@ async def sil (ctx, number):
 @bot.command(pass_context=True)
 async def test(ctx):
     await bot.say("Yaşıom len mQ")
-    
+
+@bot.command(pass_context=True)
+async def isyan(ctx):
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
+    await bot.say(":fire:")
 bot.run(os.environ.get('token'))   
