@@ -241,9 +241,8 @@ async def sil (ctx, number):
     number = int(number)
     async for x in bot.logs_from(ctx.message.channel, limit=number):
         mgs.append(x)
-    await bot.delete_messages(mgs)
-.say(embed=embed)                
-
+    await bot.delete_messages(mgs)           
+    
 @bot.command(pass_context=True)
 async def test(ctx):
     await bot.say("Yaşıom len mQ")
