@@ -4,7 +4,12 @@ import random
 import youtube_dl
 import websockets
 from discord.ext import commands
+from discord import Client
+from discord import Server
+import configparser
 import os
+config = configparser.ConfigParser()
+config.read('config.ini')
 
 bot = commands.Bot(command_prefix='-')
 bot.remove_command('help')
